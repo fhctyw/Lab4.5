@@ -34,8 +34,7 @@ int main()
 
 	for (int i = 0; i < 10; i++)
 	{
-		int r = rand();
-		x = -R1 + r * (2 * R1) / RAND_MAX;
+		x = -R1 + rand() * (2 * R1) / RAND_MAX;
 		y = -R1 + rand() * (2 * R1) / RAND_MAX;
 
 		if (x * x + y * y <= R2 * R2 && x <= 0 && y >= 0 ||
